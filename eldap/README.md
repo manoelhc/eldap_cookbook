@@ -73,7 +73,7 @@ This is the way you iterate through the results of the LDAP search.
 
 ```
 eldap_execute "search_username" do |result|
-  execute "#{result.inspect.to_s.gsub(/\s/,'_')}" do
+  execute result['cn'] do
     command "echo '#{result.inspect}'"
   end
 end

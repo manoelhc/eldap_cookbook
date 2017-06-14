@@ -4,7 +4,7 @@ maintainer_email 'manoelhc@gmail.com'
 license 'MIT'
 description 'Cookbook which provides resources to perfom searches on LDAP'
 long_description 'Cookbook which provides resources to perfom searches on LDAP'
-version '0.1.1'
+version '0.1.2'
 
 gem 'net-ldap', '= 0.16.0'
 
