@@ -14,7 +14,7 @@ eldap "search-user" do
 end
 
 eldap_execute "search-user" do |result|
-  execute "#{result.inspect.to_s.gsub(/\s/,'_')}" do
+  execute result['cn'] do
     command "echo '#{result.inspect}'"
   end
 end
