@@ -11,6 +11,7 @@ Your need to create at least 3 "resources": eldap_connection, eldap (action :sea
 ### eldap_connection resource
 
 First of all, set your connection:
+
 ```
 eldap_connection "ldap-example" do
   host ldap.mycompany.com
@@ -20,7 +21,9 @@ eldap_connection "ldap-example" do
   auth_password 'Password1'
 end
 ```
+
 Or set the attributes:
+
 ```
 {"eldap" :
    "host" : "ldap.mycompany.com",
@@ -32,7 +35,9 @@ Or set the attributes:
    }
 }
 ```
+
 And use just set the connction name to use the default settings:
+
 ```
 eldap_connection "ldap-example"
 ```
